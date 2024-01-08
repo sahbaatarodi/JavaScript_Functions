@@ -11,6 +11,7 @@ function printOdds(count) {
     }
   }
   }
+  console.log(printOdds(10));
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 function checkAge(userName, age) {
@@ -25,6 +26,9 @@ function checkAge(userName, age) {
     console.log(aboveSixteen);
   }
 }
+console.log(checkAge("John", 18));
+console.log(checkAge("Alice", 14));
+
 
   console.log("EXERCISE 3:\n==========\n");
   function whichQuadrant(x, y) {
@@ -45,7 +49,11 @@ function checkAge(userName, age) {
       console.log(`(${x}, ${y}) is at the origin`);
     }
   }
-  
+console.log(whichQuadrant(0, 2));
+console.log(whichQuadrant(1, 2));
+console.log(whichQuadrant(-6, 18));
+console.log(whichQuadrant(0, 0));
+
   console.log("EXERCISE 4:\n==========\n");
   function triangleType(side1, side2, side3) {
     // Check for a valid triangle
@@ -62,5 +70,9 @@ function checkAge(userName, age) {
       return "Invalid triangle: The sum of two sides should be greater than the length of the third side";
     }
   }
-  
+console.log(triangleType(1, 2, 2));   // Isosceles triangle
+console.log(triangleType(1, 1, 2));   // Invalid triangle
+console.log(triangleType(3, 3, 3));   // Equilateral triangle
+console.log(triangleType(4, 5, 6));   // Scalene triangle
+
     
